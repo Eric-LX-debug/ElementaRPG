@@ -14,16 +14,29 @@ html {
 
 body {
     height: 100vh;
+    background-color: rgb(255, 249, 240);
 }
 
 
 
+.principal {
+    margin-right: 5%;
+}
+
+ul li .principal:hover {
+    background-color: rgb(217, 65, 103);
+}
+
+
 #menu {
-    background-image: linear-gradient(to right, #e24242 , #7958c7);
+    
+    /* background-image: linear-gradient(to right, #e24242 , #7958c7); */
+    background-color: rgb(217, 65, 103);
     text-align: center;
     
     
 }
+
 
 /*botão de maestrias*/
 a {
@@ -36,47 +49,49 @@ a {
     
 }
 
-/* ao posicionar o mouse, fica com a cor de baixo. */
-a:hover {
-    background-color:rgb(148, 62, 126);;
+img {
+    width: 35px;
+}
 
 
+.combate:hover, 
+.armas:hover, 
+.equipamentosgerais:hover, 
+.Maestrias:hover {
+    background-color: rgb(166, 52, 110);
+    padding: 1em 0em 0.79em 0em;
 }
 
 /* Primeiro ul que envolve todos eles, onde estão posicionados os links etc. */
-#menu ul {
-    
+#menu ul { 
     display: inline;
-    
 }
 
 /* segunda lista não ordenada onde estão posicionado os links de fato. */
 #menu ul li {display:inline-block;
-    
 }
 
 
 
 /* ainda não sei o que faz, mas é o link de maestria que contem os outros links */
 #menu ul li:hover ul {
-    
     display:flex; /* Muda para flex para organizar horizontalmente */
     flex-wrap:wrap; /* Faz os itens "quebrarem" para a linha de baixo se necessário */
     
 }
 
 /* link que aparecem ao pôr o mouse em Maestrias */
-#menu ul li ul {
+#menu ul li ul {   
     position:absolute;
     width: auto;  /* Para que a largura se ajuste ao conteúdo */
     display:none;
-    background:  rgb(211, 140, 127);
+    background:  rgb(241, 241, 241);
     
     
 }
 /* fundo dos links em cascata */
 #menu ul li ul li {
-    background: rgb(211, 140, 127);
+    background: rgb(241, 241, 241);
     display:block;
     flex-basis: 50%; /* Cada item ocupa 50% do espaço, criando duas colunas */
 }
@@ -86,10 +101,16 @@ a:hover {
 Isso torna o link mais "clicável", 
 pois toda a área do item da lista fica interativa, não apenas o texto. */
 #menu ul li ul li a {
+    color: black;
     display:block !important; /*Força a aplicação da propriedade display: block, 
     ignorando outras regras CSS que poderiam tentar modificar o display*/
     padding: 10px; 
 }
+#menu ul li ul li a:hover {
+    background-color: rgb(198, 197, 197);
+}
+
+
 
 .conteudoinformacoes {
     display: flex;
