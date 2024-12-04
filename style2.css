@@ -1,0 +1,31 @@
+/* Posiciona o submenu dentro do menu principal */
+#menu ul li ul li ul {
+    position: absolute;
+    top: 0; /* Alinha ao topo do item pai */
+    left: 100%; /* Posiciona ao lado direito do item pai */
+    display: none; /* Esconde inicialmente */
+    background: rgb(241, 241, 241); /* Cor de fundo */
+}
+
+/* Mostra o submenu quando o pai está em hover */
+#menu ul li ul li:hover ul {
+    display: flex; /* Mostra o submenu */
+    flex-direction: column; /* Organiza os itens na vertical */
+}
+
+/* Estiliza os itens do submenu */
+#menu ul li ul li ul li {
+    background: rgb(241, 241, 241);
+    padding: 10px;
+    white-space: nowrap; /* Evita quebras no texto */
+}
+
+#menu ul li ul li ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+#menu ul li ul li ul li a:hover {
+    background-color: rgb(198, 197, 197);
+}
