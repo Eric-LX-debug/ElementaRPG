@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favDice.ico" type="image/x-icon">
     <title>Elementa RPG - Combate</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
                 <a href="#">Combate</a>
                 <ul>
                     <li><a href="#definicao">Definição</a></li>
-                    <li><a href="#">Danos</a></li> 
+                    <li><a href="#danos">Danos</a></li> 
                     <li><a href="#protecao-section">Proteção e reação</a></li>
-                    <li><a href="#">Ações em combate</a></li>
-                    <li><a href="#">Ferimentos e morte</a></li>
+                    <li><a href="#acoes-em-combate">Ações em combate</a></li>
+                    <li><a href="#ferimentos-e-morte">Ferimentos e morte</a></li>
                     
                 </ul>
             </li>
@@ -84,19 +85,19 @@
             </li>  
         </ul>
     </nav>
-
+    <p id="definicao"></p>
     <section class="conteudoinformacoes">
 
         <section class="definicao-combate-section">
 
             <h1 id="definicao">Sistema de combate Elementa </h1>
 
-            <p>O sistema de combate de Elementa é projetado para ser estratégico e realista,<br />
+            <p id="gabriela">O sistema de combate de Elementa é projetado para ser estratégico e realista,<br />
                 destacando a importância da proteção dinâmica e das reações. Aqui está um resumo: 
             </p>
 
             <ol>
-                <li><strong>Proteção Dinâmica:</strong> A proteção é calculada como AGI + 10, e varia conforme o
+                <li id="parkinsans"><strong>Proteção Dinâmica:</strong> A proteção é calculada como AGI + 10, e varia conforme o
                     terreno, ações anteriores e condições específicas do combate.
                 </li>
                 <br>
@@ -132,8 +133,7 @@
                 <li><strong>Lesão Grave:</strong> Personagens em péssimo estado físico devido a uma lesão grave
                     recebem uma penalidade de -5 em proteção até que a lesão grave seja curada
                 </li>
-            </ol>
-
+            </ul>
             <p>
                 Este sistema é focado no gerenciamento de recursos, adaptação ao ambiente e planejamento
                 estratégico para maximizar a sobrevivência dos personagens.
@@ -150,7 +150,8 @@
                 personagem consiga superar quaisquer situações, mesmo as menos favoráveis, utilizando
                 estratégias defensivas e reativas.
             </p>
-
+            <!-- Próxima sessão incluida sobre o texto da outra, port conta do menu fixo no topo -->
+            <p id="protecao-section"></p> 
             <p>
                 O combate no sistema de Elementa se baseia em um valor dinâmico de proteção que, ao ser
                 superado pelo atacante, permite que o personagem gaste sua reação para desviar, bloquear ou
@@ -161,14 +162,14 @@
             </p>
 
         </section>
-
+        
         <section class="protecao-section">
-            <h2 id="protecao-section">Proteção e reação</h2>
+            <h2 >Proteção e reação</h2>
             <p>
                 A proteção de um personagem é definida pela sua AGI + 10. Já sua reação começa em 1.
             </p>
         </section>
-
+        
         <section class="reacoes-section">
 
             <h2>Reações</h2>
@@ -410,14 +411,113 @@
                     eletrocutado ou quaisquer outras condições negativas elementais, receba -2 de proteção até
                     que seja tratado.
                 </li>
-
+                <p id="acoes-em-combate"></p>
                 <li><strong>Sob envenenamento ou doença:</strong> alguns envenenamentos e doenças reduzem a proteção do
                     personagem.
                 </li>
-
             </ul>
 
         </section>
+        <section class="acoes-em-combate">
+            <h1 id="acoes-em-combate">Ações em combate</h1>
+            <p>
+                Todos os personagens possuem uma quantidade padrão por rodada de ações, sendo elas: ação padrão, ação de movimento, ação completa e ação livre, além da reação. Cada ação tem sua característica e ações que podem ser feitas com elas. Ou seja, em um turno pode fazer: <br>
+                    <p>
+                        Uma ação padrão e uma de movimento; <br>
+                            Duas ações de movimento; <br>
+                            Uma ação completa. <br>
+                                        Além disso, pode fazer qualquer quantidade de ações livres por turno. <br>
+                    </p>
+            </p>
+
+            <ul>
+                <li> <strong>Ação completa:</strong> o personagem realiza uma ação muito complexa que requer o gasto de suas ações de movimento e padrão em um único turno, ou seja, o personagem não poderá fazer mais nada nesse turno além dessa ação e de ações livres. Você pode gastar sua ação completa para se movimentar igual ao dobro do seu deslocamento normal.</li>
+                <li>> Postura defensiva: entre em uma postura sem aberturas até o início do seu próximo turno, lhe concedendo +2 de proteção. A postura se desfaz ao receber dano (mesmo que não seja seu próximo turno).</li>
+                <li>> <strong>Investida:</strong> avance até o dobro do seu deslocamento padrão, em linha reta, focando em um alvo. Ao alcançá-lo, receba +3 em testes de ataque e rolagens de dano. Caso exista algum obstáculo ou seres no caminho de sua investida, pode realizar a ação de colidir como ação livre. Caso não consiga abrir caminho com essa ação, sua investida será interrompida (você não pode atacar o obstáculo ou o ser no caminho).</li>
+                <li>> <strong>Golpe de misericórdia:</strong> ataque um alvo adjacente e indefeso. Esse golpe é um acerto crítico automático e possui uma chance de matar o alvo imediatamente, sendo 25% de chance (menor ou igual a 25 em 1d100) contra personagens importantes e 75% de chance (menor ou igual a 75 em 1d100) contra personagens secundários.</li>
+                <li><strong>Ação padrão:</strong> o personagem realiza uma ação demorada como atacar. O uso dessa ação só pode ser feito uma vez por turno.</li>
+                <li>> <strong>Atacar: </strong>desfere um golpe físico ou um disparo em um alvo que esteja dentro do alcance da arma utilizada. Seres de tamanho minúsculo, médio e grande possuem alcance corpo a corpo natural de 1,5 metros, personagens maiores possuem um alcance físico igual a 3 metros. Com um ataque a distância, o personagem consegue disparar até o dobro do alcance padrão da arma, porém recebe -5 em seu acerto se passar do seu alcance máximo comum.</li>
+                <li>> <strong>Colidir:</strong> ao utilizar sua ação padrão, durante um movimento, para ocupar ou avançar por um espaço ocupado por um outro personagem, você o atropela, jogando ele para um espaço de 1,5 metros à frente ou apenas o derruba e continua o seu avanço. Caso o personagem lhe dê passagem você passa ou ocupa o espaço onde ele estava sem dificuldades, porém caso ele resista um teste de manobra é exigido para ambos personagens, aquele que tiver maior resultado vence. Caso você perca no teste de manobra, seu deslocamento é interrompido e você perde sua ação padrão. Colidir pode ser feito com uma ação livre durante uma investida.</li>
+                <li>> <strong>Preparar ação: </strong>prepara uma ação (padrão, de movimento ou livre) para realizar mais tarde, após seu turno, mas antes de seu turno na próxima rodada. Diga a ação que vai fazer e em quais circunstâncias (por exemplo, “disparar minha besta na primeira criatura que passar pela porta”). A qualquer momento antes de seu próximo turno, você pode fazer a ação preparada como uma reação a essas circunstâncias. Se, no seu próximo turno, você ainda não tiver realizado sua ação preparada, não pode mais realizá-la (embora possa preparar a mesma ação de novo). Pelo resto do combate, sua Iniciativa fica imediatamente acima da qual você fez a ação preparada.</li>
+                <li>> <strong>Usar item:</strong> utilize um item com uma ação padrão.</li>
+                <li>> <strong>Manobra de combate: </strong>uma manobra é o ato diferente de causar dano. Faça um teste de manobra (um teste de FOR) oposto com a criatura (mesmo que vocês estejam com armas à distância). As manobras de combate são:</li>
+                <li><strong>AGARRAR -</strong> A criatura fica agarrada, sofrendo penalidade em sua proteção e em seus ataques. Você só pode agarrar se estiver desarmado ou com uma arma natural (irá ficar com uma das mãos ou com a arma natural ocupadas enquanto agarrar a criatura). Você se movimenta com metade do seu deslocamento padrão, mas a leva com você e pode soltá-la com ação livre. Caso queira, pode realizar um ataque com sua mão livre ou, se preferir, realizar um teste de manobra contra a criatura e, caso passe, cause dano de impacto igual ao seu ataque desarmado ou arma natural.</li>
+                <li><strong>DERRUBAR</strong> - A criatura fica caída, sofrendo penalidade em sua proteção e em seus ataques. Além disso, não pode realizar reações enquanto caída. Caso seu teste tenha ultrapassado o teste da criatura em 5 ou mais, você pode jogá-la em um espaço de 1,5 metros na direção a sua escolha. Caso esse espaço seja um precipício, a criatura pode realizar um teste de AGI para se agarrar (GD 20).</li>
+                <li><strong>DESARMAR - </strong>A criatura tem sua arma roubada e jogada no mesmo espaço onde se encontra (exceções para caso de voo, sobre uma ponte, etc). Caso seu teste tenha ultrapassado o teste da criatura em 5 ou mais, você pode arremessá-la em um espaço de 1,5 metros na direção a sua escolha.</li>
+                <li><strong>EMPURRAR -</strong> A criatura é empurrada 1,5m. Para cada 5 pontos de diferença entre os testes, você empurra o alvo mais 1,5m. Você pode gastar uma ação de movimento para avançar junto com a criatura (até o limite do seu deslocamento).</li>
+                <li><strong>QUEBRAR -</strong> A criatura tem seu item empunhado atacado. Cause o dano no item levando em consideração o capítulo quebrando estruturas e objetos.</li>
+                <li><strong>Ação de movimento:</strong> o personagem utiliza essa ação para se movimentar, saltar, passar por lugares apertados, puxar e guardar itens.</li>
+                <li>> <strong>Levantar: </strong>você gasta sua ação para se levantar.</li>
+                <li>> <strong>Manipular itens: </strong>jogar um item, abrir uma porta, buscar itens em uma bolsa, ações que envolvem manipulações de itens gastam uma ação de movimento.</li>
+                <li>><strong> Mirar:</strong> caso o seu alvo esteja em combate com seus aliados, ele recebe +5 de proteção e aumenta o risco de você acertar outros alvos (incluindo seus aliados). Você pode realizar a ação de mirar para anular esse bônus na proteção do seu alvo.</li>
+                <li>> <strong>Movimentar:</strong> se movimentar pelo campo de batalha gasta uma ação de movimento. Você consegue se movimentar, por padrão, até duas vezes por turno, utilizando uma ação completa.</li>
+                <li>> Sacar ou guardar itens: pegar itens ou guardá-los em seu inventário custam uma ação de movimento.</li>
+                <li><strong>Ação livre:</strong> o personagem gasta ações livres para fazer atos rápidos e observar o ambiente rapidamente. Ações como falar ou fazer um teste para perceber um alvo escondido. Você só pode realizar testes de percepção com ação livre uma vez por turno.</li>
+                <li>> <strong>Atrasar ação:</strong> você pode atrasar sua ação para analisar as ações de seus aliados e inimigos a fim de pensar em uma melhor estratégia. Você pode atrasar seu turno em qualquer posição da iniciativa, porém, essa ação não poderá ser desfeita até o fim do combate.</li>
+                <li>><strong> Falar:</strong> Em geral, falar é uma ação livre, apesar disso, existe um limite do quanto você consegue falar durante um combate a depender do mestre.</li>
+                <li>><strong> Largar um item:</strong> Deixar cair um item que esteja segurando é uma ação livre. Mas deixar cair (ou jogar) um item com a intenção de acertar algo é uma ação padrão. E deixar cair (ou jogar) um item para que outra pessoa agarre é uma ação de movimento.</li>
+                <li>
+                    ><strong>Reação:</strong>
+                    Jogar-se no chão: você pode jogar-se no chão sem receber dano, caso faça isso, recebe a condição de caído. Você pode gastar sua reação para jogar outro ser adjacente a você no chão (mesmo que caia por cima da criatura, não recebe a condição de caído).
+                </li>
+                
+                <li>> <strong>Esquivar:</strong> você realiza um teste de DES para tentar desviar do ataque, caso seu teste de DES seja maior ou igual ao acerto do atacante, você consegue desviar e evitar o dano.</li>
+                <li>> <strong>Revidar:</strong> você realiza um teste de ataque para tentar evitar o ataque do seu atacante e golpear de volta. Caso o seu valor seja superior ao valor de ataque do inimigo, você evita o dano e ataca com quaisquer armas corpo a corpo que estiver empunhando (caso tenha empunhadura dupla, apenas uma das armas será utilizada). Caso esteja com armas de disparo ou fogo, você ataca com uma coronhada ou, caso esteja desarmado, realizará um ataque desarmado.</li>
+                <p id="ferimentos-e-morte"></p>
+                <li>><strong> Bloquear: </strong>você realiza um teste de CON para segurar o ataque do oponente a fim de reduzir ou evitar completamente o dano. Caso seu teste de CON seja superior ao ataque do seu oponente, reduza o dano igual ao seu valor de CON. Escudos e proteções aumentam a redução do dano</li>
+            </ul>
+        </section>
+
+        <section class="ferimentos-e-morte">
+            <h1 id="ferimentos-e-morte">Ferimentos e morte</h1>
+        
+            <p>Sempre que você é atingido por um ataque, cai de algum lugar muito alto, sofre de queimadura por ácido ou recebe uma bola de fogo no meio da cara, você recebe um valor de dano que é reduzido diretamente de seus pontos de vida. O dano deixa cicatrizes, amassa armaduras, marcam a pele, mas não impedem de agir. Você só para de lutar apenas quando seus pontos de vida chegam a zero. <br>
+            Caso seus pontos de vida cheguem a 0, você cai indefeso e inconsciente. No início do seu turno, você precisa realizar um teste de CON (GD 15), se passar, estabiliza, perdendo a condição de indefeso e não precisa mais fazer esse teste, mas continua inconsciente e com 0 PVs. Para acordar é preciso passar em um teste de CON (GD 20) no começo do seu turno ou recuperar, pelo menos, 1 PV. Se acordar pelo seu próprio teste, recupera 1 PV. <br>
+            Porém, caso falhe no teste de CON enquanto estiver morrendo, recebe uma marcação em seu contador de morte, ou seja, seu personagem está mais próximo da morte, começando a perder seus sentidos. Quanto mais marcações forem feitas em sua ficha, mais próximo do fim o personagem estará. O personagem perde sua vida (e o controle do personagem) ao chegar em três contadores de morte. Caso ele consiga ser estabilizado pelo seu próprio teste ou por outro personagem na mesma cena em que ele tiver caído em morrendo, na próxima vez que cair nessa mesma cena, já estará com dois contadores no início do seu estado de morte. Caso caia uma terceira vez, após ter sido estabilizado novamente, morre instantaneamente.
+            </p>
+           
+            <h2> Dano não letal</h2>
+            <p>Apesar de parecer estranho, existe uma forma de causar dano não letal nos personagens, seja utilizando os próprios punhos, controlando a força dos golpes ou utilizando a parte não cortante de lâminas, por exemplo. De qualquer forma, um ser que tenha seu PV reduzido a 0 por dano não letal, não entram no estado de morte, apenas ficam inconscientes e indefesas, sem a necessidade de realizar testes para se manterem estabilizadas. Quaisquer ataques não letais (utilizando armas letais), recebem a penalidade de -5 em seus acertos. Já ataques desarmados não letais e armas não letais recebem -5 em seus acertos caso usados para causar dano letal.
+            </p>
+            
+            <h2>Ferimento crítico</h2>
+            <p>Ao ser atingido por um ataque crítico, a criatura recebe um ferimento grave, talvez por um ponto fraco ter sido atingido, a lâmina de uma espada ter afundado em sua carne ou um pedaço de metal entrou em sua unha. De qualquer forma, um ferimento grave causa uma penalidade na proteção da criatura de 5 pontos até que se afaste, em uma distância de 9 metros, do causador do ferimento ou que recupere, pelo menos, 1 ponto de vida. Caso contrário, irá se manter com o ferimento crítico.</p>
+            <h2>Lesão grave</h2>
+            <p>
+                Enquanto o ferimento crítico não é algo que deva ser tão preocupante logo de cara, a lesão grave é quando um personagem sofre, em um único ataque (seja ele físico ou especial) um dano igual ou maior a metade de sua vida máxima. Nesse caso o personagem foi vítima de uma runa poderosa que fez algum de seus órgãos pararem de funcionar, a perda de um membro do seu corpo ou um dano cerebral severo por uma criatura do abismo. Independente de como seja, a lesão grave causa uma perda de -5 de proteção do personagem até que seja curada e, além disso, quando o personagem chegar a 0 PVs, cairá em seu estado de morte com dois contadores de morte já marcados (como se fosse a segunda vez nesse estado na mesma cena). Caso caia em morrendo pela segunda vez nessa mesma cena, você morre instantaneamente (como se fosse a terceira vez neste estado na mesma cena).
+                Para curar uma lesão grave é preciso de um teste de SAB de uma hora de duração e um resultado 20 no teste. A depender do mestre, uma lesão grave pode ser proveniente de algo muito mais complexo do que apenas um membro decepado e será necessário algo além de um simples teste para curá-lo como, por exemplo, adquirir um recurso muito valioso e raro no topo de uma montanha ou dentro de uma caverna cheia de monstros.
+            </p>
+            <p id="danos"></p>
+        </section>
+        <section class="danos">
+            <h1 id="danos">Danos em Elementa</h1>
+           
+            <p>Em Elementa existem diversos tipos de dano que dependem da origem de onde ele foi liberado, seja de armas, de criaturas ou de habilidades especiais.</p>
+            <ul>
+                <li>
+                    Corte, perfuração e impacto: são os tipos básicos das armas físicas, sempre dependem do tipo da arma utilizada, caso seja uma lâmina será corte, se for uma lança, perfuração e, caso seja um martelo, impacto.
+                </li>
+                <li>Rúnico: o dano proveniente da energia rúnica pura.</li>
+                <li>Sórdido: o dano proveniente da natureza excruciante do abismo.</li>
+                <li>Elemental: o dano elemental varia de acordo com o elemento utilizado, o tipo de dano que o elemento</li> causa sempre estará descrito em uma habilidade ou arma. Os tipos são:
+                <p>
+                    > fogo (fogo), <br>
+                    > elétrico (raio), <br>
+                    > torrencial (água), <br>
+                    > sismático (terra) <br>
+                    > tempestuoso (vento). <br>
+                    > congelante (gelo), <br>
+                    > ígneo (magma, vapor, explosão e plasma) <br>
+                    > e sonoro (som). <br>
+                </p>
+
+                <li>Mental: é o tipo de dano que afeta diretamente a mente do alvo, ela faz com que o corpo sinta dano a partir da mente.</li>
+                <li>Veneno: é o tipo de dano para alquímicos que envenenam as criaturas ou o próprio elemento veneno.</li>
+                <li>Corrosivo: é o tipo de dano para alquímicos corrosivos como ácido ou o próprio elemento composto de corrosão.</li>
+                <li>Puro: dano proveniente dos deuses bondosos, o dano puro afeta diretamente criaturas sórdidas.</li>
+            </ul>
+        </section>
+
 
     </section>
     
@@ -427,3 +527,6 @@
     </footer>
 </body>
 </html>
+
+
+

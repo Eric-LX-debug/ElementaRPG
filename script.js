@@ -1,3 +1,4 @@
+// Script para menu dropdown
 document.querySelectorAll("#menu li").forEach((item) => {
     item.addEventListener("mouseenter", () => {
         const dropdown = item.querySelector("ul");

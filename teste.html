@@ -7,25 +7,114 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div id="menu">
-        <ul>
+
+    <nav id="menu">
+        <ul class="principal">
+            <li><a href="./index.html">Elementa RPG</a></li>
+        </ul>
+
+        <ul class="combate">
             <li>
-                <a href="#" class="Maestrias">Maestrias</a>
-                <ul class="dropdown">
-                    <li><a href="#">Combate</a></li>
-                    <li>
-                        <a href="#">Armas</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Espadas</a></li>
-                            <li><a href="#">Arcos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Equipamentos Gerais</a></li>
+                <a href="./combate.html">Combate</a>
+                <ul>
+                    <!-- OBSERVAÇÃO: PARA ANCORAR UM LINK DE OUTRA PÁGINA, COLOCAR O CAMINHO + O ID DE ANCORÂGEM -->
+                    <li><a href="./combate.html#definicao">Definição</a></li>
+                    <li><a href="#">Danos</a></li> 
+                    <li><a href="./combate.html#protecao-section">Proteção e reação</a></li>
+                    <li><a href="#">Ações em combate</a></li>
+                    <li><a href="#">Ferimentos e morte</a></li>  
                 </ul>
             </li>
         </ul>
-    </div>
+
+        <ul class="armas">
+            <li>
+                <a href="#">Armas</a>
+                <ul class="dropdown">
+                    <li><a href="#">Habilidades de Armas</a></li>
+                    <li>
+                        <a href="#">Armas básicas</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Armas de uma mão</a></li>
+                            <li><a href="#">Armas de duas mãos</a></li>
+                            <li><a href="#">Armas à distância - uma mão</a></li>
+                            <li><a href="#">Armas à distância - duas mãos</a></li>
+                            <li><a href="#">Armas balísticas - uma mão</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Armas singulares</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        
+        <ul class="equipamentosgerais">
+            <li>
+                <a href="./equipamentosgerais.html">Equipamentos gerais</a>
+                <ul>
+                    <li><a href="#">Ladinagem</a></li>
+                    <li><a href="#">Elementa</a></li>
+                    <li><a href="#">Artes Marciais</a></li>
+                    <li><a href="#">Encantamento</a></li>
+                    <li><a href="#">Adestramento</a></li> 
+                    <li><a href="#">De uma mão</a></li> 
+                    <li><a href="#">Armas de disparo</a></li> 
+                    <li><a href="#">Armas balísticas</a></li>
+                    <li><a href="#">Rúnica</a></li>  
+                    <li><a href="#">Arremessáveis</a></li>  
+                    <li><a href="#">Alquimia</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <ul class="Maestrias">
+            <li>
+                <a href="./maestrias.html">Maestrias</a>
+                <ul>
+                    <li><a href="#">Ladinagem</a></li>
+                    <li><a href="#">Elementa</a></li>
+                    <li><a href="#">Artes Marciais</a></li>
+                    <li><a href="#">Encantamento</a></li>
+                    <li><a href="#">Adestramento</a></li> 
+                    <li><a href="#">De uma mão</a></li> 
+                    <li><a href="#">Armas de disparo</a></li> 
+                    <li><a href="#">Armas balísticas</a></li>
+                    <li><a href="#">Rúnica</a></li>  
+                    <li><a href="#">Arremessáveis</a></li>  
+                    <li><a href="#">Alquimia</a></li>  
+                </ul>
+            </li>  
+        </ul>
+    </nav>
+
+
+
+    
+    <!-- <div id="menu">
+        <ul>
+            <li>
+                <a href="#" class="Maestrias">Armas</a>
+                <ul class="dropdown">
+                    <li><a href="#">Combate</a></li>
+                    <li><a href="#">Habilidades de Armas</a></li>
+                    <li>
+                        <a href="#">Armas básicas</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Armas de uma mão</a></li>
+                            <li><a href="#">Armas de duas mãos</a></li>
+                            <li><a href="#">Armas à distância - uma mão</a></li>
+                            <li><a href="#">Armas à distância - duas mãos</a></li>
+                            <li><a href="#">Armas balísticas - uma mão</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Armas avançadas</a></li>
+                    <li><a href="#">Armas singulares</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+
+
     <h1>testando menu dropdown</h1>
     <script src="script.js"></script>
 </body>

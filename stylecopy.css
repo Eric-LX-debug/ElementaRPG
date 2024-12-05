@@ -27,53 +27,104 @@ body {
 
 
 
+ul li .principal:hover {
+    background-color: rgb(217, 65, 103);
+}
+
 
 /* xxxxxxxxxxxxxxxxxxxxxx  Fixar menu no topo xxxxxxxxxxxxxxxxxxxxxx */
 
+#menu {
+    position: fixed;
+    background-color: rgb(217, 65, 103);
+    text-align: center;
+    font-family: 'Bona Nova SC'; /*define a fonte de todo o documento*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 3px;
+}
 
+
+/*botão de maestrias*/
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+    padding: 10px;
+    display:inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    min-width: 150px;
+}
 
 
 #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+   display: inline;
 }
 
 #menu ul li {
-    position: relative;
+   display: inline-block;
+}
+
+/* Mostra o submenu ao passar o mouse */
+#menu ul li ul li:hover > ul {
+    display: block;
 }
 
 #menu ul li ul {
     display: none; /* Esconde os dropdowns */
     position: absolute;
     top: 100%; /* Posiciona abaixo do item pai */
-    left: 0;
+    left: 40%;
     background-color: rgb(241, 241, 241);
-    padding: 0;
-    list-style: none;
     z-index: 1000;
+    width: 200px; /* Largura fixa para o dropdown */
+    padding: 0; /* Remove o padding para evitar inconsistências */
 }
 
-#menu ul li ul li {
-    padding: 10px;
+.combate:hover, 
+.armas:hover, 
+.equipamentosgerais:hover, 
+.Maestrias:hover {
+    background-color: rgb(166, 52, 110);
+    padding: 1em 0em 0.79em 0em;
 }
+
 
 #menu ul li ul li a {
     color: black;
     text-decoration: none;
     display: block;
+    text-align: center;
+    width: 200px; /* Largura fixa para o dropdown */
+    padding: 10px; /* Remove o padding para evitar inconsistências */
 }
 
 #menu ul li ul li a:hover {
     background-color: rgb(198, 197, 197);
 }
 
+
+/* Estilo base para os itens do submenu */
+#menu ul li ul li ul li a {
+    color: black;
+    text-decoration: none;
+    min-width: 150px; /* Garante largura mínima consistente */
+    padding: 10px; /* Padding consistente */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 /* Submenu (dropdown dentro de dropdown) */
 #menu ul li ul li ul {
+    position: absolute;
     left: 100%; /* Posiciona à direita do item pai */
     top: 0; /* Alinha ao topo */
+     min-width: 150px; /* Mesma largura mínima dos links */
 }
+
+
 
 .conteudoinformacoes {
     display: flex;
