@@ -19,11 +19,11 @@
                 <a href="./combate.html">Combate</a>
                 <ul>
                     <!-- OBSERVAÇÃO: PARA ANCORAR UM LINK DE OUTRA PÁGINA, COLOCAR O CAMINHO + O ID DE ANCORÂGEM -->
-                    <li><a href="./combate.html#definicao">Definição</a></li>
-                    <li><a href="#">Danos</a></li> 
-                    <li><a href="./combate.html#protecao-section">Proteção e reação</a></li>
-                    <li><a href="#">Ações em combate</a></li>
-                    <li><a href="#">Ferimentos e morte</a></li>  
+                    <li><a href="../html/combate.html#definicao">Definição</a></li>
+                    <li><a href="../html/combate.html#danos">Danos</a></li> 
+                    <li><a href="../html/combate.html#protecao-section">Proteção e reação</a></li>
+                    <li><a href="../html/combate.html#acoes-em-combate">Ações em combate</a></li>
+                    <li><a href="../html/combate.html#ferimentos-e-morte">Ferimentos e morte</a></li>  
                 </ul>
             </li>
         </ul>
@@ -32,18 +32,28 @@
             <li>
                 <a href="#">Armas</a>
                 <ul class="dropdown">
-                    <li><a href="#">Habilidades de Armas</a></li>
+                    <li><a href="#habilidades-armas">Habilidades de Armas</a></li>
                     <li>
-                        <a href="#">Armas básicas</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Armas de uma mão</a></li>
+                        <a href="#armas-basicas">Armas básicas</a>
+                        <ul class="dropdown" style="top: 33%;">
+                            <li><a href="#uma-mao">Armas de uma mão</a></li>
+                            <li><a href="#duas-maos">Armas de duas mãos</a></li>
+                            <li><a href="#distancia-uma-mao">Armas à distância - uma mão</a></li>
+                            <li><a href="#distancia-duas-maos">Armas à distância - duas mãos</a></li>
+                            <li><a href="#balistica-uma-mao">Armas balísticas - uma mão</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#armas-avancadas">Armas avançadas</a>
+                        <ul class="dropwdown" style="top: 66%;">
+                            <li><a href="#armas-avancadas-uma-mao">Armas de uma mão</a></li>
                             <li><a href="#">Armas de duas mãos</a></li>
                             <li><a href="#">Armas à distância - uma mão</a></li>
                             <li><a href="#">Armas à distância - duas mãos</a></li>
                             <li><a href="#">Armas balísticas - uma mão</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Armas singulares</a></li>
+                        
                 </ul>
             </li>
         </ul>
@@ -90,9 +100,492 @@
 
     <section class="conteudoinformacoes">
 
-        <h1>Armas de elementa</h1>
+        
+        
+        <section id="armas-elementa">
+            <h1>Armas de elementa</h1>
 
+            <p>
+                As armas de Elementa são classificadas em quatro categorias principais de acordo com o
+                seu grau de complexidade (básica, avançada, singular e armas balísticas), além disso, as
+                armas possuem uma finalidade como armas corpo a corpo (feitas para combates pessoais) e à
+                distância (tanto com armas arremessáveis, quanto de disparo). <br>
+            </p>
+            <p>
+                O personagem pode optar por utilizar o estilo de empunhadura que quiser, por exemplo,
+                usar uma arma de duas mãos com uma mão para ter uma mão livre e utilizar a maestria de
+                uma mão com essa arma (porém sofre uma penalidade de -1d20 em seus ataques e reações de
+                revidar) ou uma arma de uma mão com duas para utilizar a maestria de uma mão com essas
+                armas (você não recebe penalidade em testes de ataque ou revidar). <br>
+            </p>
+            <p id="habilidades-armas"></p>
+            <p>
+                
+                As características básicas das armas são: preço (o valor do item + acessórios, como bainha
+                e aljava), dano (a quantidade de dados rolados ao realizar um ataque bem sucedido para ferir
+                um alvo), crítico (ocorre ao tirar 20 em seu dado de ataque, algumas armas possuem o
+                potencial crítico maior, tornando o valor necessário para dar crítico, menor), alcance (o tipo
+                de alcance da arma), tipo (se refere ao tipo de dano da arma entre corte, perfuração e
+                impacto) e volume (quantidade ocupada em sua carga máxima). <br>
+                
+            </p>
+           
+        </section>
+        
+
+        <section class="habilidades-armas">
+
+            <h2>Habilidades de armas</h2>
+            <p>
+                As armas também apresentam uma ou mais habilidades para se diferenciarem de outras. São
+                elas:
+            </p>
+
+            <h3>Acutilante</h3>
+            <p>
+                A arma é balanceada para atingir mais pontos vitais com a maior velocidade possível, mas
+                perde sua força bruta. Você pode aumentar o potencial crítico em +1, mas reduz o dano em
+                um passo.
+            </p>
+
+            <h3>Adaptável</h3>
+            <p>A arma pode ser segurada com duas mãos para aumentar seu dano em um passo.</p>
+            
+            <h3>Ágil</h3>
+            <p>Você pode usar sua AGI em testes de ataque e soma nas rolagens de dano ao invés de FOR.</p>
+            
+            <h3>Alongada</h3>
+            <p>
+                O alcance natural da arma é 3 metros de distância, porém impossibilita ataques contra alvos
+                adjacentes. Você pode atacar com o cabo da arma, mas será considerado um ataque
+                desarmado.
+            </p>
+
+            <h3>Arremessável</h3>
+            <p>
+                Armas arremessáveis podem ser jogadas em um alvo dentro do alcance padrão da arma. Caso
+                tentem ser usadas em combate corpo a corpo ou arremessadas em alvos adjacentes, o usuário
+                recebe -1d20 em seu teste de ataque. O alcance máximo de uma arma arremessável é igual ao
+                dobro do seu alcance padrão, porém recebe -2d20 em testes de ataque caso ultrapasse o
+                alcance padrão.
+            </p>
+
+            <h3>Colossal</h3>
+            <p>
+                Uma arma de tamanho colossal que só pode ser empunhada por seres específicos. Possui um
+                alcance natural de 3 metros. Só pode ser empunhada por magnimorfos (normais ou
+                magnificados) gigantes e titãs.
+            </p>
+
+            <h3>Dupla</h3>
+            <p>
+                A arma pode ser usada com empunhadura de duas armas. Cada extremidade é considerada
+                uma arma separada, podendo receber melhorias e encantamentos distintos.
+            </p>
+
+            <h3>Esmagadora</h3>
+            <p>
+                Seu impacto contra armaduras grossas e placas metálicas causa uma onda de choque no corpo
+                do seu portador. Por isso, essa arma causa +1 dado do mesmo tipo contra inimigos em
+                armaduras pesadas, carapaças duras ou objetos, mas diminui o passo da arma em 1.
+            </p>
+
+            <h3>Leve</h3>
+            <p>Uma arma que pode ser usada com empunhadura de duas armas.</p>
+
+            <h3>Penetrante</h3>
+            <p>
+                Essa arma foi feita para atravessar facilmente panos, couraças e proteções leves, por isso
+                ignora 2 de RD contra inimigos com armaduras e escudos leves, e criaturas com carapaça de
+                quitina.
+            </p>
+        
+
+            <h3>Resistente</h3>
+            <p>
+                Essa arma foi produzida com alguma parte que ajuda a se proteger, enquanto a empunhar
+                recebe 2 de resistência contra dano físico (corte, perfuração e impacto). Esse bônus é
+                cumulativo com outras armas resistentes.
+            </p>
+
+            <h3>Sorrateira</h3>
+            <p>
+                Essa arma consegue ser ocultada com facilidade, seja por ser retrátil ou pequena. Receba +5
+                no teste para ocultar essa arma.
+            </p>
+            <p id="lista-armas"></p>
+            <h3>Versátil</h3>
+            <p>Fornece bônus em uma ou mais manobras de combate.</p>
+        </section>
+        <!-- <p id="armas-basicas"></p> -->
+        <section class="lista-armas" >
+            <h2 id="armas-basicas">Lista de armas</h2>
+            <p>As armas serão listadas com as seguintes características em ordem:
+                
+                <em> 
+                    <p>preço | dano | potencial crítico | alcance | volume</p> 
+                </em> 
+                <p id="uma-mao"></p>
+            </p>
+
+            <h3>Armas básicas</h3>
+
+            <h4 >Armas de uma mão</h4>
+            <strong>Adaga</strong>
+            <p>5 EO | 1d4 perfurante | 19/x3 | curto | <br> 1. Uma adaga é uma arma ágil, leve e penetrante. Pode
+                ser arremessada a uma distância curta.
+            </p>
+
+            <strong>Bō</strong>
+            <p>
+            – | 1d8/1d8 impacto | x2 | – |<br> 2. 
+            Um bastão de madeira feito para combate, é uma arma dupla.
+            </p>
+
+            <strong>Chicote</strong>
+            <p>
+                – | 1d4 corte | x2 | especial | <br> 1. Esta arma pode ser usada para atacar inimigos a até 4,5m e
+                pode se enroscar nas mãos, pernas ou armas de seus adversários. O chicote é uma arma ágil,
+                leve e versátil, fornecendo +2 em testes para derrubar ou desarmar.
+            </p>
+
+            <strong>Clava</strong>
+            <p>– | 1d6 impacto | x2 | – | <br> 1. Um pedaço de madeira empunhado como uma arma</p>
+
+            <strong>Cutelo</strong>
+            <p>15 EO | 1d8 cortante | 19 | – | <br> 1. Uma grande arma feita para decapitar cabeças. É uma arma
+            adaptável.
+            </p>
+
+            <strong>Espada curta *</strong>
+            <p>12 EO | 1d6 cortante | x2 | – | <br> 1. Uma espada forjada com lâmina curta de 30 - 60 cm. É uma
+            arma leve.
+            </p>
+
+            <strong>Faca de caça</strong>
+            <p>5 EO | 2d4 cortante | x2 | – | <br> 1. Uma faca pesada de lâmina grossa, é uma arma penetrante e
+            versátil, concedendo +2 em testes de derrubar.
+            </p>
+
+            <strong>Foice de mão</strong>
+            <p>3 EO | 1d4 cortante | x4 | – | <br> 1. Uma foice curta e curva, usada para ceifa de plantações
+            pequenas e rasteiras. É uma arma leve.
+            </p>
+
+            <strong>Gládio</strong>
+            <p>10 EO | 1d6 cortante/perfurante | 19 | – | <br> 1. Uma arma com lâmina entre 60 a 85 cm de
+            comprimento, é uma arma penetrante se usada com umaestocada</p>
+
+            <strong>Kama #</strong>
+            <p>5 EO | 1d4 cortante | 19/x3 | – | <br> 1. Uma foice pequena e reta com um cabo de madeira e
+            lâmina de aço. Uma Kama é uma arma ágil e leve.
+            </p>
+
+            <strong>Karambit</strong>
+            <p>6 EO | 1d4 cortante | x2 | – | <br> 1. A faca possui uma lâmina curva possibilitando cortes em
+            arco, além disso, a presença do anel para segurá-la permite que ela não seja desarmada por
+            seus inimigos. Karambit é uma arma ágil, leve e sorrateira.
+            </p>
+
+            <strong>Maça *</strong>
+            <p></p>
+
+            <strong></strong>
+            <p>12 EO | 1d8 impacto | x2 | – | <br> 1. Uma arma bem conhecida por entre os devotos das
+            divindades, possui uma pequena haste com a ponta metálica cheia de protuberâncias que
+            auxiliam na hora de ESMAGAR os ossos dos inimigos.
+            </p>
+
+            <strong>Machado de batalha</strong>
+            <p>15 EO | 1d8 cortante | x3 | – | <br> 1. Uma arma poderosa com duas lâminas cortantes na ponta,
+            capaz de cortar os corpos dos seus inimigos.
+            </p>
+
+            <strong>Martelo de guerra *</strong>
+            <p>12 EO | 2d4 perfurante/impacto | x2 | – | <br> 1. Um martelo projetado para causar grande dano
+            em armaduras, possui um lado de sua cabeça chata, que causa dano impactante e uma ponta
+            pontiaguda que causa dano de perfuração. O martelo de guerra é uma arma esmagadora.
+            </p>
+
+            <strong>Porrete</strong>
+            <p>– | 1d6 impacto | x2 | – | <br> 1. O porrete é uma arma rudimentar com uma estrutura menos letal
+            em sua ponta, um pedaço de madeira ou plástico sendo empunhado como uma arma,
+            basicamente. O porrete causa dano não-letal.</p>
+
+            <strong>Tanto #</strong>
+            <p>8 EO | 1d4 cortante | x3 | – | <br> 1. A tanto é uma faca da terra de Hanokuni pequena utilizada
+            como substituta para as grandes armas do exército de jade. É uma arma ágil, leve e
+            sorrateira.
+            </p>
+
+            <strong>Tonfa #</strong>
+            <p>– | 1d6 impacto | x2 | – | <br> 1. Tonfa é uma arma feita de madeira que possui uma forma de
+            empunhar rente aos braços, ela é uma arma resistente e leve.
+            </p>
+
+            <strong>Wakizashi #</strong>
+            <p id="duas-maos">12 EO | 1d6 cortante | 19/x3 | – | <br> 1. A espada curta de Hanokuni, é maior do que uma tanto,
+            porém menor do que uma katana. Geralmente é carregada junto com uma katana pelos
+            soldados do exército de jade e é uma arma ágil.
+            </p>
+
+            <h4>Armas de duas mãos</h4>
+
+            <strong>Lança *</strong>
+            <p>
+                6 EO | 1d6 perfurante | x2 | – | <br>1. Uma arma feita com uma haste de madeira com uma ponta
+                de aço, ela é uma arma ágil.
+            </p>
+            
+            <strong>Manopla *</strong>
+            <p>
+                4 EO | especial | x2 | – | <br>1. Um par de manoplas, concede +1d6 de impacto em seus ataques
+                desarmados e faz com que esses ataques sejam letais.
+            </p>
+
+            <strong>Picareta</strong>
+            <p>
+                3 EO | 1d8 perfurante | 19 | – |<br> 1. Os instrumentos de escavação são ótimas armas - quando
+                usadas dessa forma - é uma arma penetrante e esmagadora.
+            </p>
+
+            <strong>Pique *</strong>
+            <p>
+                8 EO | 1d8 perfurante | x2 | – |<br> 2. O pique é uma lança muito longa com o objetivo de desferir
+                golpes em alvos distantes, é uma arma alongada.
+            </p>
+
+            <strong>Soqueira</strong>
+            <p>
+                4 EO | especial | 19 | – | <br> 1. Um par de soqueiras com espaço para encaixar os dedos da mão,
+                concede +1d6 de dano perfurante em seus ataques desarmados e faz com que esses ataques
+                sejam letais.
+            </p>
+
+            <strong>Tacape</strong>
+            <p>
+                2 EO | 2d4 impacto | x2 | – | <br> 1. Uma arma densa e pesada com um corpo alongado e ponta
+                cilíndrica. É uma arma resistente.
+            </p>
+            
+            <strong>Clava colossal</strong>
+            <p>
+                – | 1d10 impacto | 19 | – | <br> 2. Uma variação colossal, literalmente, da clava padrão. Ela é uma
+                arma colossal.
+            </p>
+
+            <strong>Martelo colossal</strong>
+            <p>
+                – | 1d12 impacto | 19 | – | <br>2. Uma variação colossal, literalmente, do martelo de guerra
+                padrão. Ele é uma arma colossal.
+            </p>
+            <p id="distancia-uma-mao"></p>
+            <strong>Cutelo colossal</strong>
+            <p>
+                – | 1d12 cortante | 19 | – | <br> 2. Uma variação colossal, literalmente, do cutelo de guerra padrão.
+                Ele é uma arma colossal.
+            </p>
+        
+            <h4>Armas à distância - uma mão </h4>
+            
+            <strong>Azagaia</strong>
+            <p>
+                2 EO | 1d6 perfurante | x2 | médio | <br> 1. Uma lança leve e flexível, é uma arma arremessável e
+                leve.
+            </p>
+            <strong>Besta leve *</strong>
+            <p>
+                35 EO | perfurante | 19 | 1 munição | médio | <br>1. Um arco montado sobre uma coronha de
+                madeira com um gatilho, a besta leve é uma arma que dispara virotes com grande potência.
+                Recarregar uma besta leve é uma ação de movimento.
+                -Virote (20)
+            </p>
+            <strong>Bumerangue</strong>
+            <p>
+                1 EO | 1d6 impacto | x2 | médio | <br>1. Um instrumento de madeira curvo que, ao ser
+                arremessado, retorna ao seu dono. O alvo pode realizar um teste de agilidade (GD 10 + AGI
+                + bônus de maestria arremessável) para agarrar o bumerangue antes dele voltar. Ele é uma
+                arma arremessável e adaptável.
+            </p>
+            <strong>Dardo de arremesso (10)</strong>
+            <p>
+                10 EO | 2d4 perfurante | 19 | curto | <br>1. Um pequeno instrumento com uma ponta de metal fina
+                e alongada, possui penas em sua base para auxiliar em seu arremesso, é uma arma
+                arremessável e acutilante.
+            </p>
+            <strong>Facas de arremesso (10)</strong>
+            <p>
+                10 EO | 1d4 cortante | 18/x3 | curto |<br> 1. Um conjunto de pequenas facas extremamente
+                afiadas, é uma arma arremessável.
+            </p>
+            <strong>Funda</strong>
+            <p>
+                – | especial | x2 | médio | <br> 1. Uma pequena bolsa de couro com tiras de cânhamo usada para
+                    arremessar pequenos projéteis. Seu dano depende do projétil utilizado.
+                <p>
+                    - Pedregulho (20): causa 1d6 de dano de impacto. <br>
+                    - Bola de ferro (10): causa 1d8 de dano de impacto. <br>
+                    - Bola de espinhos (10): causa 1d8 de dano perfurante. <br>
+                    - <em>[ideias para outros projéteis]</em> <br>
+                    - Bombinha (10): causa 1d8 de dano ígneo. <br>
+                    - Bola pesada (10): causa 1d10 de dano de impacto. <br>
+                    - Pedregulho de fogo (20): causa 1d6 de dano de fogo. <br>
+                    - Bola de ácido (20): causa 1d6 de dano corrosivo. <br>
+                </p>
+            </p>
+            <strong>Machadinha</strong>
+            <p>
+                5 EO | 1d8 corte | x3 | curto | <br> 1. Um machado pequeno que pode ser arremessado. É uma arma
+                arremessável e adaptável.
+            </p>
+            
+            <strong>Zarabatana</strong>
+            
+            <p id="distancia-duas-maos">
+                – | 2d4 perfurante | x2 | médio | <br>1. Um pequeno instrumento de sopro que utiliza a força dos
+                seus pulmões para disparar um pequeno dardo em seus alvos, é uma arma sorrateira.
+                <p>-Dardo de Zarabatana (20)</p> 
+            </p> 
+            </p>
+            
+            <h4>Armas à distância - duas mãos </h4>
+            
+            <strong>Arco curto</strong>
+            <p id="balistica-uma-mao"></p>
+            <p>
+                25 EO | 1d6 perfurante | x3 | médio | <br> 1. Uma arma rudimentar, porém eficiente, composta por
+                uma estrutura de madeira ou metal curvada com as pontas ligadas por uma linha resistente e
+                flexível.
+                <p>-Flecha (20)</p>
+                
+            </p>
+
+            <h4>Armas balísticas - uma mão </h4>
+
+            <strong>Canhão de mão *</strong>
+            <p>
+                500 EO | 2d8 impacto | 2 munições | x3 | curto | <br> 1.Uma arma balística com uma grande boca,
+                carregada por bolas maciças de ferro negro. Recarregar essa arma gasta uma ação de
+                movimento.
+                <p>- Bola de canhão de mão (10).</p>
+            </p>
+            
+            <strong >Pistola *</strong> 
+            <p id="armas-avancadas">
+                250 EO | 2d6 perfurante | 6 munições | 19/x3 | médio | <br> 1. Uma arma balística simples com
+                uma boca pequena, ela é carregada por bolas pequenas de ferro que são liberadas por um
+                gatilho. Recarregar essa arma gasta uma ação de movimento. Uma pistola é uma arma leve.
+                <p>- Balas (20).</p>
+            </p>
+            <p id="armas-avancadas-uma-mao">
+            <h3>Armas avançadas</h3>
+
+            <h4>Armas de uma mão</h4>
+            <strong>Adaga ondulada</strong>
+            <p>10 EO | 1d6 perfurante | 19/x3 | – | <br> 1. Uma adaga ondulada é uma arma ágil, leve e acutilante.</p>
+
+            
+            <strong>Cimitarra</strong>
+            <p>
+                15 EO | 1d6 corte | 18 | – | <br> 1. Uma espada com a lâmina curva e muito afiada. A cimitarra é
+                uma arma ágil.
+            </p>
+
+            <strong>Espada bastarda *</strong>
+            <p>
+                45 EO | 1d10/1d12 corte | 19 | – | <br> 2. Uma espada grande com uma empunhadura adaptada
+                para uma ou duas mãos. É uma arma adaptável.
+            </p>
+
+            <strong>Espada longa *</strong>
+            <p>
+                20 EO | 1d8 corte | 19 | – | <br> 1. Uma espada de lâmina grande, entre 80 centímetro e 1 metro e
+                reta.
+            </p>
+
+            <strong>Katana #</strong>
+            <p>
+                80 EO | 1d10/1d12 corte | 18 | – | <br> 1. A famosa espada da terra de Hanokuni, possui um único
+                fio, é uma arma adaptável.
+            </p>
+
+            <strong>Maça longa *</strong>
+            <p>
+                20 EO | 1d10/1d12 impacto | x2 | – | <br> 2. Uma variação alongada da maça padrão, é uma arma
+                adaptável e alongada.
+            </p>
+
+            <strong>Mangual *</strong>
+            <p>
+                25 EO | 1d8 impacto | 19 | – |  <br> 1. Uma variação da maça padrão, porém com uma corrente
+                ligando a sua empunhadura com a cabeça, ela é uma arma esmagadora e alongada, porém
+                não recebe a penalidade em ataques adjacentes.
+            </p>
+
+            <strong>Rapieira *</strong>
+            <p>
+                75 EO | 1d8 perfurante | x3 | – | <br> 1. Um tipo de espada, de lâmina comprida e estreita, capaz de
+                atingir pontos vitais dos inimigos, é uma arma ágil e acutilante.
+            </p>
+            <p id="armas-avancadas-duas-maos"></p>
+            <strong>Sabre</strong>
+            <p>
+                35 EO | 2d4 corte | 19 | – | <br> 1. Uma lâmina curva com dois gumes, estruturada para duelos
+                diretos, é uma arma ágil e versátil, concedendo +2 em testes para desarmar.
+            </p>
+           
+            <h4>Armas de duas mãos</h4>
+
+            Alabarda *
+            75 EO | 1d10 corte/perfurante | x3 | – | 2. Uma haste de madeira com 2m de comprimento e
+            uma lâmina de machado na ponta. A alabarda é uma arma alongada.
+            Gadanha
+            30 EO | 3d4 corte | x4 | – | 2. Uma grande foice, utilizada para ceifa em lugares altos ou
+            grandes campos, é uma arma alongada.
+            Kusarigama #
+            10 EO | 2d6 corte | 19/x3 | – | 1. Uma kama ligada em um peso de chumbo por uma corrente,
+            é uma arma ágil, alongada e concede +2 em testes para desarmar e derrubar.
+            Lança montada *
+            10 EO | 1d8 perfurante | x3 | – | 2. A lança montada é uma arma alongada. Se você estiver
+            montado, pode usá-la com apenas uma mão e causa +2d8 de dano quando realiza uma
+            investida montada.
+            Machado de guerra
+            20 EO | 1d12 corte | x3 | – | 2. Uma variação maior e mais pesada do machado de batalha.
+            Marreta *
+            20 EO | 4d4 impacto | x2 | – | 2. Uma variação maior e mais pesada do martelo de guerra sem
+            a parte pontiaguda, é uma arma esmagadora, resistente e versátil, concedendo +2 em testes
+            de quebrar.
+            Montante *
+            50 EO | 1d12 corte | x2 | – | 2. Uma espada muito grande com uma lâmina medindo 1,5
+            metros.
+            Naginata #
+            20 EO | 1d10 corte | 19 | – | 2. Uma grande arma de corte que mede 2 metros no total, é uma
+            arma alongada.
+            Neko-Te #
+            15 EO | 2d4 perfurante | x3 | – | 1. Um par de luvas com três lâminas retas e um pouco
+            curvadas na ponta. É uma arma vestida que não pode ser desarmada e acutilante.
+            Nunchaku #
+            12 EO | 1d6 impacto | x3 | – | 1. Um nunchaku é uma arma ágil, leve e resistente.
+            Tetsubo #
+            20 EO | 1d8 impacto | 18 | – | 2. Um grande bastão maciço de ferro ou pedra podendo ter
+            protuberâncias para esmagar os ossos dos inimigos mais facilmente.
+            Yari #
+            20 EO | 1d10 perfurante | 18 | – | 2. Uma grande lança do exército de Hanokuni, sua ponta
+            metálica é feita para perfurar o corpo dos seus inimigos atravessando-os. É uma arma
+            alongada e penetrante.
+            Tetsubo colossal
+            – | 1d12 impacto | 18 | – | 2. Um Tetsubo colossal, é uma arma colossal.
+            Montante colossal
+            – | 4d6 corte | x2 | – | 2. Uma variação colossal da montante, é uma arma colossal.
+            Odachi #
+            – | 3d6 corte | 19 | – | 2. A maior espada de Hanokuni, possui uma lâmina de 2 metros e
+            possui apenas um único fio e extremamente curva. É uma arma colossal.
+
+            
+        </section>
     </section>
+
+    
 
 
     <footer class="rodape">
@@ -104,6 +597,6 @@
     </footer>
     
 
-<script src="../script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

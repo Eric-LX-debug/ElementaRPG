@@ -29,19 +29,30 @@
 
         <ul class="armas">
             <li>
-                <a href="./armas.html">Armas</a>
-                <ul>
-                    <li><a href="#">Ladinagem</a></li>
-                    <li><a href="#">Elementa</a></li>
-                    <li><a href="#">Artes Marciais</a></li>
-                    <li><a href="#">Encantamento</a></li>
-                    <li><a href="#">Adestramento</a></li> 
-                    <li><a href="#">De uma mão</a></li> 
-                    <li><a href="#">Armas de disparo</a></li> 
-                    <li><a href="#">Armas balísticas</a></li>
-                    <li><a href="#">Rúnica</a></li>  
-                    <li><a href="#">Arremessáveis</a></li>  
-                    <li><a href="#">Alquimia</a></li>
+                <a href="../html/armas.html">Armas</a>
+                <ul class="dropdown">
+                    <li><a href="../html/armas.html#habilidades-armas">Habilidades de Armas</a></li>
+                    <li>
+                        <a href="#">Armas básicas</a>
+                        <ul class="dropdown" style="top: 33%;">
+                            <li><a href="../html/armas.html#uma-mao">Armas de uma mão</a></li>
+                            <li><a href="../html/armas.html#duas-maos">Armas de duas mãos</a></li>
+                            <li><a href="../html/armas.html#distancia-uma-mao">Armas à distância - uma mão</a></li>
+                            <li><a href="../html/armas.html#distancia-duas-maos">Armas à distância - duas mãos</a></li>
+                            <li><a href="../html/armas.html#balistica-uma-mao">Armas balísticas - uma mão</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Armas avançadas</a>
+                        <ul class="dropwdown" style="top: 66%;">
+                            <li><a href="#">Armas de uma mão</a></li>
+                            <li><a href="#">Armas de duas mãos</a></li>
+                            <li><a href="#">Armas à distância - uma mão</a></li>
+                            <li><a href="#">Armas à distância - duas mãos</a></li>
+                            <li><a href="#">Armas balísticas - uma mão</a></li>
+                        </ul>
+                    </li>
+                        
                 </ul>
             </li>
         </ul>
@@ -420,15 +431,20 @@
         </section>
         <section class="acoes-em-combate">
             <h1 id="acoes-em-combate">Ações em combate</h1>
-            <p>
-                Todos os personagens possuem uma quantidade padrão por rodada de ações, sendo elas: ação padrão, ação de movimento, ação completa e ação livre, além da reação. Cada ação tem sua característica e ações que podem ser feitas com elas. Ou seja, em um turno pode fazer: <br>
-                    <p>
-                        Uma ação padrão e uma de movimento; <br>
-                            Duas ações de movimento; <br>
-                            Uma ação completa. <br>
-                                        Além disso, pode fazer qualquer quantidade de ações livres por turno. <br>
-                    </p>
-            </p>
+            
+            <p>Todos os personagens possuem uma quantidade padrão por rodada de ações, sendo elas: ação padrão, ação de movimento, ação completa e ação livre, além da reação. Cada ação tem sua característica e ações que podem ser feitas com elas. Ou seja, em um turno pode fazer: <br></p>
+                
+            <em>
+                <strong>
+                    <p>Uma ação padrão e uma de movimento; <br></p>
+                    <p>Duas ações de movimento; <br></p>
+                    <p>Uma ação completa. <br></p>
+                </strong>
+            </em>
+            
+            <p>Além disso, pode fazer qualquer quantidade de ações livres por turno.</p>
+                    
+            
 
             <ul>
                 <li> <strong>Ação completa:</strong> o personagem realiza uma ação muito complexa que requer o gasto de suas ações de movimento e padrão em um único turno, ou seja, o personagem não poderá fazer mais nada nesse turno além dessa ação e de ações livres. Você pode gastar sua ação completa para se movimentar igual ao dobro do seu deslocamento normal.</li>
@@ -525,6 +541,7 @@
     <footer class="rodape">
         <h1>&copy; Todos os direitos reservados.</h1>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
 
